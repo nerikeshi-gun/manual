@@ -345,7 +345,9 @@ def build(_: argparse.Namespace) -> None:
             if not is_pdf(url):
                 anomalies.append({"type": "non_pdf_link", "sku": sku, "detail": link["label"], "url": url})
             if url not in statuses:
-                if c.can_fetch(url):
+                # robots の「*.pdf$」は大文字小文字を区別するが、「.PDF」も規則の趣旨どおり不可として扱う
+                path = urlsplit(url).path
+                if c.can_fetch(url) and c.robots(url).allowed(path.lower()):
                     try:
                         resp = c.head_or_range(url)
                         statuses[url] = (str(resp.status_code), datetime.now(JST).isoformat(timespec="seconds"))
