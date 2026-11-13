@@ -1,0 +1,13 @@
+{
+ "pages": 29,
+ "rows": 31,
+ "unique_urls": 30,
+ "models_with_manual": 28,
+ "http": {
+  "200": 31
+ },
+ "anomalies": {
+  "no_manual_links": 1,
+  "shared_url": 1
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "products": 256,
+ "rows": 445,
+ "unique_urls": 279,
+ "models_with_manual": 254,
+ "http": {
+  "200": 445
+ },
+ "anomalies": {
+  "no_manual_links": 2,
+  "shared_url": 13
+ }
+}

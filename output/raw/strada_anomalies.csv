@@ -1,0 +1,57 @@
+type,model,detail,url
+model_suffix_note,,説明書に記載の品番は、末尾にＡを付け置き換えて読む,https://panasonic.jp/car/customer/manual/navi/index.html
+shared_url,CN-F1D9C1D CN-F1D9C1DA CN-F1X10C1D CN-F1X10C1DA,4,https://car.panasonic.jp/support/manual/car/navi/2024/f1x10c1d_f1d9c1d.pdf
+shared_url,CN-F1D9C1D CN-F1D9C1DA CN-F1X10C1D CN-F1X10C1DA,4,https://car.panasonic.jp/support/manual/car/navi/2026/f1x10c1d_f1d9c1d_t_b.pdf
+shared_url,CN-CA01DA CN-CA01WDA CN-CE01DA CN-CE01WDA （2024年11月ソフト搭載版）,5,https://car.panasonic.jp/support/manual/car/navi/2024/ce01d_wd_ca01d_wd_2.pdf
+shared_url,CN-CA01DA CN-CA01WDA CN-CE01DA CN-CE01WDA （2024年10月ソフト搭載版） （2024年11月ソフト搭載版）,6,https://car.panasonic.jp/support/manual/car/navi/2024/ce01d_wd_ca01d_wd_t.pdf
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/ssd/data/g1500vd_750d3_ktop.html
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/ssd/data/g1500vd_750d3_stop.html
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/ssd/data/g1500vd_750d2_ktop.html
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/ssd/data/g1500vd_750d2_stop.html
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/g_navi/data/g1500vd_750d_ktop.html
+shared_url,CN-G1500VD CN-G750D,2,http://car.panasonic.jp/support/manual/g_navi/data/g1500vd_750d_stop.html
+shared_url,CN-G1400VD CN-G540D CN-G740D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1400vd_740d_540d_ktop.html
+shared_url,CN-G1400VD CN-G540D CN-G740D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1400vd_740d_540d_stop.html
+shared_url,CN-G1300VD CN-G730D,2,"http://car.panasonic.jp/support/manual/g_navi/data/g1300vd_730d_530d_ktop.html
+"
+shared_url,CN-G1300VD CN-G530D,2,"http://car.panasonic.jp/support/manual/g_navi/data/g1300vd_730d_530d_stop.html
+"
+shared_url,CN-G1200VD CN-G520D CN-G720D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1200vd_720d_520d_ktop.html
+shared_url,CN-G1200VD CN-G520D CN-G720D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1200vd_720d_520d_stop.html
+shared_url,CN-G1100VD CN-G510D CN-G710D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1100vd_710d_510d_ktop.html
+shared_url,CN-G1100VD CN-G510D CN-G710D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1100vd_710d_510d_stop.html
+shared_url,CN-G1000VD CN-G500D CN-G700D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1000vd_700d_500d_ktop.html
+shared_url,CN-G1000VD CN-G500D CN-G700D,3,http://car.panasonic.jp/support/manual/g_navi/data/g1000vd_700d_500d_stop.html
+shared_url,CN-GP750D CN-GP755VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp755vd_750d_ktop.html
+shared_url,CN-GP750D CN-GP755VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp755vd_750d_stop.html
+shared_url,CN-GP740D CN-GP745VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp745vd_740d_ktop.html
+shared_url,CN-GP740D CN-GP745VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp745vd_740d_stop.html
+shared_url,CN-GP730D CN-GP735VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp735vd_730dtop.html
+shared_url,CN-SP730L CN-SP735VL,2,http://car.panasonic.jp/support/manual/g_navi/data/sp735vl_730ltop.html
+shared_url,CN-MC02D CN-MC02L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/mc02d_mc02l_bt.html
+shared_url,CN-MC02D CN-MC02L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/mc02d_mc02l_st.html
+shared_url,CN-GP507VD CN-GP715VD CN-GP720VD CN-SP507VL CN-SP715VL CN-SP720VL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp507sp507vl_st.html
+shared_url,CN-GP715VD CN-GP720VD,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gp715gp720vd_vt.html
+shared_url,CN-GP507VD CN-SP507VL CN-SP715VL CN-SP720VL,4,http://car.panasonic.jp/support/manual/g_navi/data_t/gp507sp507vl_vt.html
+shared_url,CN-GL711D CN-SL711L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gl711sl711l_st.html
+shared_url,CN-GL711D CN-SL711L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gl711sl711l_ht.html
+shared_url,CN-GL411D CN-SLJ210L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gl411d_st.html
+shared_url,CN-GL320D CN-SL320L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gl320sl320l_ht.html
+shared_url,CN-GL320D CN-SL320L,2,http://car.panasonic.jp/support/manual/g_navi/data_t/gl320sl320l_st.html
+shared_url,CN-GP600FVD CN-GP700FVD CN-GPA600FVD CN-GPZ600FVD CN-SP605FVL CN-SP707FVL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp600fvd_sp707fvl_vt.html
+shared_url,CN-GP600FVD CN-GP700FVD CN-GPA600FVD CN-GPZ600FVD CN-SP605FVL CN-SP707FVL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp600fvd_sp707fvl_ht.html
+shared_url,CN-GP600FVD CN-GP700FVD CN-GPA600FVD CN-GPZ600FVD CN-SP605FVL CN-SP707FVL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp600fvd_sp707fvl_ft.html
+shared_url,CN-GP600FVD CN-GP700FVD CN-GPA600FVD CN-GPZ600FVD CN-SP605FVL CN-SP707FVL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp600fvd_sp707fvl_st.html
+shared_url,CN-GP505VD CN-GP510VD CN-GP710VD CN-SP505VL CN-SP510VL CN-SPJ705VL,6,http://car.panasonic.jp/support/manual/g_navi/data_t/gp710vd_vt.html
+shared_url,CN-GP505VD CN-GP510VD CN-GP710VD CN-SP505VL CN-SP510VL CN-SP705L CN-SPJ705VL,7,http://car.panasonic.jp/support/manual/g_navi/data_t/gp710vd_st.html
+shared_url,CN-GP510VD CN-GP710VD CN-SP505VL CN-SP510VL,4,http://car.panasonic.jp/support/manual/g_navi/data_t/gp710vd_ht.html
+shared_url,CN-SP705L CN-SPJ705VL,2,http://car.panasonic.jp/support/manual/g_navi/data_t/spj705_705l_ht.html
+shared_url,CN-GP510VD CN-GP710VD,2,http://car.panasonic.jp/support/manual/g_navi/data/gp710vd_510vdtop.html
+shared_url,CN-SP510VL CN-SP710VL,2,http://car.panasonic.jp/support/manual/g_navi/data/sp710vl_510vltop.html
+shared_url,CN-H510D CN-H510WD,2,http://car.panasonic.jp/support/manual/navi/data/h510d_wdtop.html
+shared_url,CN-H500D CN-H500WD,2,http://car.panasonic.jp/support/manual/navi/data/h500d_wdtop.html
+shared_url,CA-SDL269D （B300/E300シリーズ用） CA-SDL26BD （BR300シリーズ用）,2,https://car.panasonic.jp/support/manual/car/map/2025/SDL269D_SDL26BD.pdf
+shared_url,CA-SDL26AD （RA/RE/RS/RXシリーズ用） CA-SDL26CD （F1（X/S/XV/DV/X10B/X10/D9/ X10BL/X10L/D9V）用）,2,https://car.panasonic.jp/support/manual/car/map/2025/SDL26AD_SDL26CD.pdf
+shared_url,CA-SDL26DD （F1(X10BH/X10BG/X10H/X10G/D9H/D9G)・ HA/HEシリーズ用） CA-SDL26HD （F1(X10C/D9C)・CA/CEシリーズ用）,2,https://car.panasonic.jp/support/manual/car/map/2025/SDL26DD_SDL26HD.pdf
+shared_url,CA-SDL259D （B200/B300/E200/E300シリーズ用） CA-SDL25BD （BR300シリーズ用）,2,https://car.panasonic.jp/support/manual/car/map/2024/SDL259D_SDL25BD.pdf
+shared_url,CA-SDL25AD （RA/RE/RS/RXシリーズ用） CA-SDL25CD （F1D/F1DV/F1D9/F1D9V/F1S/F1X/ F1XV/F1X10B/F1X10BL/F1X10/F1X10L用）,2,https://car.panasonic.jp/support/manual/car/map/2024/SDL25AD_SDL25CD.pdf
