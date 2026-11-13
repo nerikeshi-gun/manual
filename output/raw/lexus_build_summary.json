@@ -1,0 +1,38 @@
+{
+ "cars": 22,
+ "rows": 591,
+ "unique_urls": 516,
+ "current_rows": 189,
+ "http": {
+  "200": 591
+ },
+ "per_doc": [
+  [
+   "取扱説明書",
+   225
+  ],
+  [
+   "ナビゲーション取扱説明書",
+   198
+  ],
+  [
+   "デジタル取扱説明書",
+   99
+  ],
+  [
+   "User Guide",
+   55
+  ],
+  [
+   "運転支援アップデート",
+   9
+  ],
+  [
+   "Lexus Teammate Advanced Drive 取扱説明書",
+   5
+  ]
+ ],
+ "anomalies": {
+  "shared_url": 64
+ }
+}
