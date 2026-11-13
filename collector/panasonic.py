@@ -36,7 +36,7 @@ NOTES = OUT / "notes"
 MODELS = RAW / "panasonic_models.jsonl"
 PAGES = RAW / "panasonic_pages.jsonl"
 ANOMALIES = RAW / "panasonic_anomalies.csv"
-CSV_PATH = OUT / "manuals.csv"
+CSV_PATH = RAW / "panasonic_manuals.csv"
 SAMPLE = NOTES / "panasonic_verify_sample.csv"
 LOG = OUT / "logs" / "panasonic_requests.log"
 

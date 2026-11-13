@@ -93,10 +93,10 @@ def parse_robots(text: str, status: int | None) -> Robots:
 
 
 class PoliteClient:
-    def __init__(self, log_path: Path | None = None, timeout: float = 30.0):
-        self.session = requests.Session()
-        self.session.headers["User-Agent"] = USER_AGENT
-        self.session.headers["Accept-Language"] = "ja"
+    def __init__(self, log_path: Path | None = None, timeout: float = 30.0, session_per_thread: bool = False):
+        self._session_per_thread = session_per_thread
+        self._local = threading.local()
+        self._shared_session = self._new_session()
         self.timeout = timeout
         self._last: dict[str, float] = {}
         self._robots: dict[str, Robots] = {}
@@ -105,6 +105,27 @@ class PoliteClient:
         self.log_path = log_path
         if log_path:
             log_path.parent.mkdir(parents=True, exist_ok=True)
+
+    @staticmethod
+    def _new_session() -> requests.Session:
+        session = requests.Session()
+        session.headers["User-Agent"] = USER_AGENT
+        session.headers["Accept-Language"] = "ja"
+        return session
+
+    @property
+    def session(self) -> requests.Session:
+        """session_per_thread=True のときはスレッドごとに別のCookieを持つ（送信間隔の制御は共通）。"""
+        if not self._session_per_thread:
+            return self._shared_session
+        if not hasattr(self._local, "session"):
+            self._local.session = self._new_session()
+        return self._local.session
+
+    @session.setter
+    def session(self, value) -> None:
+        self._shared_session = value
+        self._local.session = value
 
     def _host_lock(self, host: str) -> threading.Lock:
         with self._guard:
@@ -118,25 +139,30 @@ class PoliteClient:
 
     def _log(self, method: str, url: str, status: object) -> None:
         if self.log_path:
-            with self.log_path.open("a", encoding="utf-8") as f:
+            with self._guard, self.log_path.open("a", encoding="utf-8") as f:
                 f.write(f"{time.strftime('%Y-%m-%dT%H:%M:%S')}\t{method}\t{status}\t{url}\n")
 
     def _send(self, method: str, url: str, **kw) -> requests.Response:
         host = urlsplit(url).netloc.lower()
+        # 送信開始の間隔だけをホストごとに直列化する。応答待ちは並行してよい（同時接続数は呼び出し側のスレッド数）。
         with self._host_lock(host):
             self._wait(host)
-            kw.setdefault("timeout", self.timeout)
-            try:
-                resp = self.session.request(method, url, **kw)
-            except requests.RequestException as exc:
-                self._log(method, url, type(exc).__name__)
-                raise
-            self._log(method, url, resp.status_code)
-            return resp
+        kw.setdefault("timeout", self.timeout)
+        try:
+            resp = self.session.request(method, url, **kw)
+        except requests.RequestException as exc:
+            self._log(method, url, type(exc).__name__)
+            raise
+        self._log(method, url, resp.status_code)
+        return resp
 
     def robots(self, url: str) -> Robots:
         parts = urlsplit(url)
         host = parts.netloc.lower()
+        with self._host_lock("robots:" + host):
+            return self._load_robots(parts, host)
+
+    def _load_robots(self, parts, host: str) -> Robots:
         if host not in self._robots:
             robots_url = f"{parts.scheme}://{host}/robots.txt"
             try:
@@ -154,41 +180,51 @@ class PoliteClient:
         return self._robots[host]
 
     def can_fetch(self, url: str) -> bool:
+        """robots.txt の判定。パスは大文字小文字を区別するが、「.PDF」のような表記揺れで
+        規則をすり抜けないよう、小文字化したパスでも不可なら不可とする。"""
         parts = urlsplit(url)
         target = parts.path or "/"
         if parts.query:
             target += "?" + parts.query
-        return self.robots(url).allowed(target)
+        robots = self.robots(url)
+        return robots.allowed(target) and robots.allowed(target.lower())
 
     def _check(self, url: str) -> None:
         if not self.can_fetch(url):
             raise RobotsDisallowed(url)
 
+    def _follow(self, method: str, url: str, max_hops: int = 5, **kw) -> requests.Response:
+        """リダイレクトを1ホップずつ追い、各ホップで robots.txt と送信間隔を守る。"""
+        follow = kw.pop("allow_redirects", True)
+        for _ in range(max_hops + 1):
+            self._check(url)
+            if method == "GET" and urlsplit(url).path.lower().endswith(".pdf"):
+                if "Range" not in (kw.get("headers") or {}):
+                    raise PdfBodyRefused(url)
+            resp = self._send(method, url, allow_redirects=False, **kw)
+            location = resp.headers.get("location")
+            if not follow or resp.status_code not in (301, 302, 303, 307, 308) or not location:
+                return resp
+            url = requests.compat.urljoin(url, location)
+            if resp.status_code == 303:
+                method = "GET"
+        return resp
+
     def get(self, url: str, **kw) -> requests.Response:
-        self._check(url)
-        if urlsplit(url).path.lower().endswith(".pdf"):
-            headers = kw.get("headers") or {}
-            if "Range" not in headers:
-                raise PdfBodyRefused(url)
-        return self._send("GET", url, **kw)
+        return self._follow("GET", url, **kw)
 
     def post(self, url: str, **kw) -> requests.Response:
         self._check(url)
         return self._send("POST", url, **kw)
 
     def head(self, url: str, **kw) -> requests.Response:
-        self._check(url)
-        kw.setdefault("allow_redirects", True)
-        return self._send("HEAD", url, **kw)
+        return self._follow("HEAD", url, **kw)
 
     def head_or_range(self, url: str) -> requests.Response:
         """HEADで確認し、HEADが拒否された場合のみ先頭だけをRange付きGETで取る。"""
         resp = self.head(url)
         if resp.status_code in (403, 405, 501):
-            self._check(url)
-            ranged = self._send(
-                "GET", url, headers={"Range": "bytes=0-0"}, stream=True, allow_redirects=True
-            )
+            ranged = self._follow("GET", url, headers={"Range": "bytes=0-0"}, stream=True)
             ranged.close()
             return ranged
         return resp
