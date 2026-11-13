@@ -1,0 +1,13 @@
+{
+ "rows": 92,
+ "unique_urls": 57,
+ "cars": 18,
+ "http": {
+  "200": 92
+ },
+ "per_type": {
+  "pdf": 80,
+  "html": 12
+ },
+ "shared_url": 17
+}

@@ -1,0 +1,14 @@
+{
+ "csv_records": 305,
+ "rows": 241,
+ "unique_urls": 161,
+ "cars": 7,
+ "http": {
+  "200": 241
+ },
+ "per_type": {
+  "pdf": 240,
+  "html": 1
+ },
+ "shared_url": 66
+}

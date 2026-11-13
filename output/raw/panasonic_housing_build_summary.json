@@ -1,0 +1,35 @@
+{
+ "category_pages": 353,
+ "leaf_pages_with_rows": 299,
+ "items": 4076,
+ "rows": 4973,
+ "unique_urls": 3888,
+ "models": 3017,
+ "current_rows": 3668,
+ "http": {
+  "": 4973
+ },
+ "per_doc": [
+  [
+   "施工説明書",
+   2666
+  ],
+  [
+   "取扱説明書　商品説明",
+   1396
+  ],
+  [
+   "施工説明書（設備）",
+   7
+  ],
+  [
+   "取扱説明書　商品説明（設備）",
+   7
+  ]
+ ],
+ "anomalies": {
+  "series_level": 2876,
+  "shared_url": 570
+ },
+ "urls_robots_disallowed": 3888
+}
