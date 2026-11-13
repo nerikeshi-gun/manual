@@ -1,0 +1,13 @@
+{
+ "product_pages": 594,
+ "pages_with_manual": 11,
+ "rows": 17,
+ "unique_urls": 17,
+ "http": {
+  "200": 17
+ },
+ "kinds": {
+  "internet": 11,
+  "smartphone": 6
+ }
+}

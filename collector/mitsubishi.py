@@ -171,7 +171,7 @@ def build(_: argparse.Namespace) -> None:
         for l in {l["href"]: l for l in p["links"]}.values():
             rows.append({
                 "maker": MAKER, "domain": DOMAIN, "product_category": m.get("category", ""),
-                "model_raw": p["model"], "model_normalized": normalize(p["model"]), "title": l["label"], "url": l["href"],
+                "model_raw": p["model"], "model_normalized": normalize(p["model"]), "title": re.sub(r"\s*\(\s*[\d.,]+\s*[KMG]?B\s*\)\s*$", "", re.sub(r"\s+", " ", l["label"]).strip()), "url": l["href"],
                 "url_type": "pdf", "source_method": "crawl", "first_seen": "", "http_status": "", "checked_at": "",
                 "model_unconfirmed": "0",
                 "discontinued": "1" if m.get("production_end") else ("0" if m.get("current_listed") else ""),

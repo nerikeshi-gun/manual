@@ -1,0 +1,10 @@
+maker,domain,product_category,model_raw,model_normalized,title,url,url_type,source_method,first_seen,http_status,checked_at,model_unconfirmed,discontinued
+バルミューダ,家電,toaster,KTT01JP,KTT01JP,取扱説明書,https://www.balmuda.com/downloads/pdf/KTT01JP.pdf,pdf,crawl,,200,2026-11-13T22:09:04+09:00,0,
+バルミューダ,家電,range,KRN01JP,KRN01JP,取扱説明書,https://www.balmuda.com/downloads/pdf/KRN01JP.pdf,pdf,crawl,,200,2026-11-13T22:09:03+09:00,0,
+バルミューダ,家電,kettle,KPT02JP,KPT02JP,取扱説明書,https://www.balmuda.com/downloads/pdf/KPT02JP.pdf,pdf,crawl,,200,2026-11-13T22:09:02+09:00,0,
+バルミューダ,家電,greenfan,EGF-1400,EGF-1400,取扱説明書,https://www.balmuda.com/downloads/pdf/EGF-1400_JP.pdf,pdf,crawl,,200,2026-11-13T22:09:01+09:00,0,1
+バルミューダ,家電,greenfan,AGR01JP,AGR01JP,取扱説明書,https://www.balmuda.com/downloads/pdf/AGR01JP.pdf,pdf,crawl,,200,2026-11-13T22:08:58+09:00,0,
+バルミューダ,家電,cirq,A02A-WK,A02A-WK,取扱説明書,https://www.balmuda.com/downloads/pdf/A02A_JP.pdf,pdf,crawl,,200,2026-11-13T22:08:57+09:00,0,
+バルミューダ,家電,air,A01A,A01A,取扱説明書,https://www.balmuda.com/downloads/pdf/A01A_JP.pdf,pdf,crawl,,200,2026-11-13T22:08:56+09:00,0,
+バルミューダ,家電,cleaner,C01A,C01A,取扱説明書,https://www.balmuda.com/downloads/pdf/C01A.pdf,pdf,crawl,,200,2026-11-13T22:08:59+09:00,0,
+バルミューダ,家電,cleaner,C02A,C02A,取扱説明書,https://www.balmuda.com/downloads/pdf/C02A.pdf,pdf,crawl,,200,2026-11-13T22:09:00+09:00,0,
