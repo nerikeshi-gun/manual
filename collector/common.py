@@ -47,6 +47,11 @@ def squash(value: str) -> str:
     return re.sub(r"[^A-Z0-9]", "", unicodedata.normalize("NFKC", value or "").upper())
 
 
+def name_key(value: str) -> str:
+    """車名・シリーズ名など日本語を含む名前の正規化（NFKC・大文字化・空白と区切り記号の除去。日本語は残す）。"""
+    return re.sub(r"[\s・:：\-‐－/／]", "", unicodedata.normalize("NFKC", value or "")).upper()
+
+
 def decode(resp: requests.Response) -> str:
     """meta charset を優先して本文を文字列にする（requests の推定は日本語サイトで外れることがある）。"""
     head = resp.content[:3000].lower()

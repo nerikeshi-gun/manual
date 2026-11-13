@@ -196,6 +196,10 @@ class PoliteClient:
     def _follow(self, method: str, url: str, max_hops: int = 5, **kw) -> requests.Response:
         """リダイレクトを1ホップずつ追い、各ホップで robots.txt と送信間隔を守る。"""
         follow = kw.pop("allow_redirects", True)
+        params = kw.pop("params", None)
+        if params:
+            # クエリを先にURLへ組み込む（robots 判定をクエリ込みで行い、リダイレクト先に params を再付与しないため）
+            url = requests.Request("GET", url, params=params).prepare().url
         for _ in range(max_hops + 1):
             self._check(url)
             if method == "GET" and urlsplit(url).path.lower().endswith(".pdf"):
