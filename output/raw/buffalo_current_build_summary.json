@@ -1,0 +1,17 @@
+{
+  "scope": "default public Wi-Fi router, repeater, adapter representative-model catalogs only",
+  "models": 23,
+  "rows": 135,
+  "unique_urls": 95,
+  "gaps": 0,
+  "private_records_excluded": 0,
+  "faq_reference_links_excluded": 317,
+  "sample_rows": 50,
+  "sample_http": {
+    "": 36,
+    "200": 14
+  },
+  "categories_with_more_items": [],
+  "max_models": 250,
+  "completed_at": "2026-11-23T22:03:36+09:00"
+}
