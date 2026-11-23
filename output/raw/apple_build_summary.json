@@ -1,0 +1,30 @@
+{
+  "rows": 1066,
+  "models": 492,
+  "unique_urls": 669,
+  "pages": 689,
+  "failures": [],
+  "sample_rows": 50,
+  "head_checked_unique_urls": 44,
+  "stopped_by_limit": false,
+  "remaining_queue": 0,
+  "http": {
+    "200": 220,
+    "": 846
+  },
+  "categories": {
+    "accessories": 26,
+    "airpods": 38,
+    "displays": 9,
+    "home": 27,
+    "ipad": 187,
+    "iphone": 114,
+    "ipod": 66,
+    "mac": 552,
+    "vision": 4,
+    "watch": 43
+  },
+  "max_pages": 1600,
+  "max_seconds": 2400,
+  "completed_at": "2026-11-23T21:26:41+09:00"
+}
