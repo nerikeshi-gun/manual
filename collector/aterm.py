@@ -1,9 +1,11 @@
 """NEC Aterm（www.aterm.jp/support/manual/）の取説URL収集。
 
 マニュアルトップに並ぶ機種（/support/manual/<機種>/index.html）を現行品として扱い、各ページのPDFを拾う。
-旧機種は別の一覧（/support/manual2/support/manual/）にあり、--phase rest で取る。
+全機種・旧機種は collector.aterm_all を使用する。旧実装が参照していた
+/support/manual2/support/manual/ は正誤表で、旧製品一覧ではなかった。
+現在は --phase all（既定）/ rest を新しい収集処理へ転送する。
 
-    python -m collector.aterm run --phase current|rest
+    python -m collector.aterm run --phase all|current|rest
 """
 from __future__ import annotations
 
@@ -27,6 +29,10 @@ DOC_WORDS = ("説明書", "マニュアル", "ガイド", "お使いになる前
 
 
 def run(args: argparse.Namespace) -> None:
+    if args.phase in ('all','rest'):
+        from collector.aterm_all import run as run_all
+        run_all()
+        return
     c = PoliteClient(log_path=LOGS / f"{KEY}_requests.log")
     if args.phase == "current":
         index = f"{SITE}/support/manual/"
@@ -97,7 +103,7 @@ def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser()
     r = p.add_subparsers(required=True).add_parser("run")
-    r.add_argument("--phase", choices=["current", "rest"], default="current")
+    r.add_argument("--phase", choices=["all", "current", "rest"], default="all")
     r.set_defaults(func=run)
     args = p.parse_args()
     NOTES.mkdir(parents=True, exist_ok=True)

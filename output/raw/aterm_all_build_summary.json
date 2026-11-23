@@ -1,0 +1,21 @@
+{
+  "source_pages": 82,
+  "source_kinds": {
+    "catalog": 2,
+    "model": 76,
+    "shared_legacy": 4
+  },
+  "failed_pages": 0,
+  "pages_without_documents": 1,
+  "rows": 556,
+  "models": 157,
+  "unique_urls": 484,
+  "sample_rows": 50,
+  "sample_http": {
+    "200": 50
+  },
+  "stats": {},
+  "age_cutoff": null,
+  "pdf_bodies_downloaded": 0,
+  "completed_at": "2026-11-23T23:21:30+09:00"
+}
