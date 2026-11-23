@@ -1,0 +1,4 @@
+maker,domain,product_category,model_raw,model_normalized,title,url,url_type,source_method,first_seen,http_status,checked_at,model_unconfirmed,discontinued
+パロマ,住設,ガス機器・関連部材,SKAWAD-4,SKAWAD-4,SKAWAD-4・SKFA-5・SKFA-6の工事説明書を更新しました。,https://www.paloma.co.jp/vc-files/paloma/support/info_253_1.pdf,pdf,crawl,,200,2026-11-23T21:56:47+09:00,0,
+パロマ,住設,ガス機器・関連部材,SKFA-5,SKFA-5,SKAWAD-4・SKFA-5・SKFA-6の工事説明書を更新しました。,https://www.paloma.co.jp/vc-files/paloma/support/info_253_1.pdf,pdf,crawl,,200,2026-11-23T21:56:47+09:00,0,
+パロマ,住設,ガス機器・関連部材,SKFA-6,SKFA-6,SKAWAD-4・SKFA-5・SKFA-6の工事説明書を更新しました。,https://www.paloma.co.jp/vc-files/paloma/support/info_253_1.pdf,pdf,crawl,,200,2026-11-23T21:56:47+09:00,0,
