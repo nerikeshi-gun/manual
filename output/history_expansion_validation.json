@@ -1,0 +1,17 @@
+{
+  "base_rows": 103774,
+  "total_rows": 125310,
+  "added_rows": 21536,
+  "added_by_maker": {
+    "NEC（Aterm）": 525,
+    "エプソン": 9182,
+    "ブラザー": 7365,
+    "キヤノン": 4464
+  },
+  "original_git_bytes_preserved": true,
+  "original_rows_preserved": true,
+  "subaru_rows_preserved": 101,
+  "maker_labels": 48,
+  "final_commit": "148db3600b5ee2c360f284f8d3764894fb5830df",
+  "pdf_body_model_verification": "not performed"
+}

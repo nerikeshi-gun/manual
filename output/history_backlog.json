@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-11-23T23:06:10+09:00",
+  "metric": "Known catalog/support candidate identities versus cached HTTP 200 source pages; not physical product coverage or PDF validation",
+  "records": [
+    {
+      "maker": "ソニー",
+      "key": "sony",
+      "inventory_entries": 24842,
+      "successful_source_entries": 414,
+      "pending_source_entries": 24428,
+      "identity_field": "slug",
+      "inventory_source": "output/raw/sony_models.jsonl",
+      "fetched_source": "output/raw/sony_pages.jsonl"
+    },
+    {
+      "maker": "日立",
+      "key": "hitachi",
+      "inventory_entries": 12764,
+      "successful_source_entries": 1886,
+      "pending_source_entries": 10878,
+      "identity_field": "model",
+      "inventory_source": "output/raw/hitachi_models.jsonl",
+      "fetched_source": "output/raw/hitachi_pages.jsonl"
+    },
+    {
+      "maker": "東芝ライフスタイル",
+      "key": "toshiba",
+      "inventory_entries": 6151,
+      "successful_source_entries": 811,
+      "pending_source_entries": 5340,
+      "identity_field": "no",
+      "inventory_source": "output/raw/toshiba_models.jsonl",
+      "fetched_source": "output/raw/toshiba_pages.jsonl"
+    },
+    {
+      "maker": "ドコモ",
+      "key": "docomo",
+      "inventory_entries": 770,
+      "successful_source_entries": 495,
+      "pending_source_entries": 275,
+      "identity_field": "ua",
+      "inventory_source": "output/raw/docomo_models.jsonl",
+      "fetched_source": "output/raw/docomo_pages.jsonl"
+    },
+    {
+      "maker": "アルパイン",
+      "key": "alpine",
+      "inventory_entries": 2795,
+      "successful_source_entries": 2096,
+      "pending_source_entries": 699,
+      "identity_field": "P1",
+      "inventory_source": "output/raw/alpine_models.jsonl",
+      "fetched_source": "output/raw/alpine_pages.jsonl"
+    },
+    {
+      "maker": "三菱電機",
+      "key": "mitsubishi",
+      "inventory_entries": 2727,
+      "successful_source_entries": 2727,
+      "pending_source_entries": 0,
+      "identity_field": "pid",
+      "inventory_source": "output/raw/mitsubishi_models.jsonl",
+      "fetched_source": "output/raw/mitsubishi_pages.jsonl"
+    }
+  ]
+}
