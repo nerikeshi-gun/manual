@@ -1,0 +1,21 @@
+{
+  "sitemap_source_pages": 1196,
+  "ij_japan_selector_models": 177,
+  "source_pages": 1373,
+  "processed_pages": 1373,
+  "failed_pages": 0,
+  "source_pages_without_documents": 521,
+  "rows": 4464,
+  "named_models": 1529,
+  "unique_urls": 4006,
+  "model_unconfirmed_rows": 572,
+  "sample_rows": 50,
+  "sample_http": {
+    "200": 50
+  },
+  "stats": {},
+  "age_cutoff": null,
+  "pdf_bodies_downloaded": 0,
+  "scope": "All pages discovered in JP manual sitemap plus all Japan-region IJ selector entries; not proof of all historical Canon products",
+  "completed_at": "2026-11-23T23:30:57+09:00"
+}
