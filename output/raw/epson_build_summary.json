@@ -1,0 +1,22 @@
+{
+  "catalog_pages": 96,
+  "catalog_failures": [],
+  "model_pages": 1657,
+  "failed_model_pages": 0,
+  "model_pages_without_documents": 72,
+  "rows": 9182,
+  "named_models": 1585,
+  "unique_urls": 5518,
+  "sample_rows": 50,
+  "sample_http": {
+    "": 50
+  },
+  "stats": {
+    "urls_robots_disallowed": 49
+  },
+  "age_cutoff": null,
+  "current_only": false,
+  "pdf_bodies_downloaded": 0,
+  "scope": "All entries reached from the official public manual catalog, including hidden old-model lists; not proof of every historical product",
+  "completed_at": "2026-11-23T23:17:32+09:00"
+}
