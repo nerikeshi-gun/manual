@@ -19,6 +19,39 @@ TARGETS = {
  '車載':['パイオニア（carrozzeria）','ケンウッド','アルパイン','パナソニック（ストラーダ）','コムテック','ユピテル'],
  '住設':['リンナイ','ノーリツ','パロマ','TOTO','LIXIL','パナソニック ハウジング','タカラスタンダード','クリナップ','マックス']}
 
+# The original named targets are a starting list, not a ceiling. Keep missing
+# manufacturers visible rather than dropping them from the denominator.
+ADDITIONAL_TARGETS = {
+ '家電':['キヤノン','エプソン','ブラザー','JVC／Victor','ヤマハ','ハイアール','アクア','ハイセンス','ツインバード','シロカ','山善','コロナ','トヨトミ'],
+ '通信':['エレコム','TP-Link','ASUS'],
+ '車載':['トヨタ','レクサス','日産','ホンダ','マツダ','三菱自動車','スズキ','ダイハツ','スバル','いすゞ','日野','三菱ふそう'],
+ '住設':['長府製作所','KVK','SANEI','タカギ']}
+
+def coverage(rows):
+    counts=Counter(r['maker']for r in rows)
+    all_targets={d:list(names)+ADDITIONAL_TARGETS.get(d,[])for d,names in TARGETS.items()}
+    lines=['# メーカー・機種・資料の収集状況','',f'更新: {now()}。台帳合計 {len(rows):,} 行。',
+        '', '対象は現行機種と過去機種。**当初の37枠は初期リストで、メーカー数の上限・全体の分母ではない。**',
+        '下表はメーカー別の記録数であり、網羅率・完了率ではない。機種欄は型式文字列の種類数で、資料行数とは分ける。',
+        '全機種・過去機種の網羅確認は未完了。公式掲載一覧を辿り終えた場合も、未掲載の歴史的全製品まで網羅したとは扱わない。',
+        '', '| 分野 | メーカー・ブランド枠 | 型式文字列数 | 資料行数 | 状態 |','|---|---|---:|---:|---|']
+    for domain,names in all_targets.items():
+        for name in names:
+            model_count=len({r['model_raw']for r in rows if r['maker']==name and r['model_raw']})
+            status='部分収集・全機種／過去機種は未完了' if counts[name] else '未収集・取得経路調査対象'
+            if counts[name] and name in ('Samsung','アイリスオーヤマ'):status='索引メタ情報のみ・配信未確認'
+            if counts[name] and name=='タカラスタンダード':status='索引メタ情報＋HTML・範囲限定'
+            if counts[name] and name in ('キヤノン','エプソン','ブラザー'):status='現行限定なしで公開一覧を巡回・残件は各社notes参照'
+            lines.append(f'| {domain} | {name} | {model_count:,} | {counts[name]:,} | {status} |')
+    named={n for names in all_targets.values()for n in names}
+    other=sorted(n for n in counts if n not in named)
+    if other:
+        lines+=['','## その他の記録','']+[f'- {n}: {counts[n]:,}行'for n in other]
+    lines+=['','追加調査リストも全メーカーを列挙したものではない。未収集メーカーと旧ブランドの棚卸しを継続する。',
+        '旧ブランドのナショナル・三洋・富士通ゼネラル等も検索対象に含める。既存メーカーの1行だけで旧ブランド分まで収集済みとは扱わない。',
+        'HTTP確認・公式掲載の型式対応・PDF本文照合は別の検証。PDF本文は保存せず、各社notesに実施範囲と取得不能・未掲載の範囲を残す。','']
+    (ROOT/'output/coverage.md').write_text('\n'.join(lines),encoding='utf-8')
+
 def append(key, maker):
     if not re.fullmatch('[a-z_]+',key):
         raise ValueError('Invalid maker key')
@@ -53,26 +86,7 @@ def append(key, maker):
              'original_bytes_preserved':True,'original_sha256':hashlib.sha256(before).hexdigest(),
              'subaru_rows_preserved':sum(r['maker']=='スバル'for r in after),'at':now()}
     (RAW/f'{key}_append_validation.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
-    counts=Counter(r['maker']for r in after)
-    missing=[n for ns in TARGETS.values()for n in ns if not counts[n]]
-    lines=['# 当初対象の収録状況','',f'更新: {now()}。台帳合計 {len(after):,} 行。',
-           '',f'当初に個別名を挙げた37枠のうち、収録あり {37-len(missing)}、未収録 {len(missing)}。',
-           '「収録あり」は1行以上あるという意味で、メーカー全機種の収集・本文検証完了を意味しない。',
-           '', '| 分野 | メーカー・ブランド枠 | 台帳行数 | 状態 |','|---|---|---:|---|']
-    for domain,names in TARGETS.items():
-        for name in names:
-            status='収録あり・範囲限定（各社notes参照）' if counts[name] else '未収録・取得経路の再調査対象'
-            if counts[name] and name in ('Samsung','アイリスオーヤマ'):
-                status='索引メタ情報のみ・配信未確認'
-            if counts[name] and name=='タカラスタンダード':
-                status='索引メタ情報6行＋HTML1行・範囲限定'
-            lines.append(f'| {domain} | {name} | {counts[name]:,} | {status} |')
-    named={n for ns in TARGETS.values()for n in ns}
-    other=sorted(n for n in counts if n not in named)
-    lines+=['','## その他の収録メーカー','', '指示書の「各自動車メーカー」に含まれる収録分。対象集合をこの一覧だけに限定しない。','']
-    lines += [f'- {n}: {counts[n]:,}行'for n in other]
-    lines+=['','PDF本体は保存しない。HTTP確認・型番と資料の対応・PDF本文照合は別の検証であり、各社notesに実施範囲を記す。','']
-    (ROOT/'output/coverage.md').write_text('\n'.join(lines),encoding='utf-8')
+    coverage(after)
     print(json.dumps(receipt,ensure_ascii=False))
 
 if __name__=='__main__':
