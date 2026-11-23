@@ -1,0 +1,15 @@
+{
+  "scope": "public /lib/ update-listing batch only, not entire product catalog",
+  "source_url": "https://www.iodata.jp/lib/",
+  "library_entries": 94,
+  "models": 94,
+  "rows": 238,
+  "unique_urls": 46,
+  "gaps": 0,
+  "sample_rows": 50,
+  "sample_http": {
+    "200": 50
+  },
+  "max_models": 300,
+  "completed_at": "2026-11-23T21:40:13+09:00"
+}
