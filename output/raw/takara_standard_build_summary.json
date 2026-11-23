@@ -1,0 +1,15 @@
+{
+  "rows": 7,
+  "models": 4,
+  "unique_urls": 5,
+  "model_unconfirmed": 1,
+  "http": {
+    "": 6,
+    "200": 1
+  },
+  "indexed_metadata_rows": 6,
+  "live_html_manuals": 1,
+  "pdf_bodies_downloaded": 0,
+  "pdf_model_match_rate": null,
+  "completed_at": "2026-11-23T22:31:58+09:00"
+}

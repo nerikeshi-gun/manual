@@ -1,4 +1,4 @@
-"""Append one maker's verified URL rows without rebuilding unrelated records.
+"""Append one maker's sourced URL rows without rebuilding unrelated records.
 
 Some historical additions exist only in manuals.csv, not raw/*_manuals.csv.
 Re-running combine would lose them; preserve the existing bytes instead.
@@ -61,7 +61,12 @@ def append(key, maker):
            '', '| 分野 | メーカー・ブランド枠 | 台帳行数 | 状態 |','|---|---|---:|---|']
     for domain,names in TARGETS.items():
         for name in names:
-            lines.append(f'| {domain} | {name} | {counts[name]:,} | '+('収録あり（範囲は各社notes参照）'if counts[name]else'未収録・取得経路の再調査対象')+' |')
+            status='収録あり・範囲限定（各社notes参照）' if counts[name] else '未収録・取得経路の再調査対象'
+            if counts[name] and name in ('Samsung','アイリスオーヤマ'):
+                status='索引メタ情報のみ・配信未確認'
+            if counts[name] and name=='タカラスタンダード':
+                status='索引メタ情報6行＋HTML1行・範囲限定'
+            lines.append(f'| {domain} | {name} | {counts[name]:,} | {status} |')
     named={n for ns in TARGETS.values()for n in ns}
     other=sorted(n for n in counts if n not in named)
     lines+=['','## その他の収録メーカー','', '指示書の「各自動車メーカー」に含まれる収録分。対象集合をこの一覧だけに限定しない。','']
