@@ -1,0 +1,7 @@
+maker,domain,product_category,model_raw,model_normalized,title,url,url_type,source_method,first_seen,http_status,checked_at,model_unconfirmed,discontinued
+アイリスオーヤマ,家電,サーキュレーター,PCF-SC15,PCF-SC15,取扱説明書,https://www.irisohyama.co.jp/products/manual/pdf/273514.pdf,pdf,crawl,,,,0,
+アイリスオーヤマ,家電,サーキュレーター,PCF-SDS15T,PCF-SDS15T,取扱説明書,https://www.irisohyama.co.jp/products/manual/pdf/287573.pdf,pdf,crawl,,,,0,
+アイリスオーヤマ,家電,サーキュレーター,PCF-HMK151,PCF-HMK151,取扱説明書,https://www.irisohyama.co.jp/products/manual/pdf/272305.pdf,pdf,crawl,,,,0,
+アイリスオーヤマ,家電,サーキュレーター,PCF-HMK151,PCF-HMK151,取扱説明書,https://www.irisohyama.co.jp/products/manual/pdf/272306.pdf,pdf,crawl,,,,0,
+アイリスオーヤマ,家電,サーキュレーター,PCF-SDS15T-EC,PCF-SDS15T-EC,取扱説明書（WEB）,https://www.irisohyama.co.jp/products/manual/pdf/202341.pdf,pdf,crawl,,,,0,
+アイリスオーヤマ,家電,サーキュレーター,PCF-SDS15T-EC,PCF-SDS15T-EC,取扱説明書,https://www.irisohyama.co.jp/products/manual/pdf/202343.pdf,pdf,crawl,,,,0,

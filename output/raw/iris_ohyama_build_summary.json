@@ -1,0 +1,16 @@
+{
+  "rows": 6,
+  "models": 4,
+  "unique_urls": 6,
+  "http": {
+    "": 6
+  },
+  "stats": {
+    "urls_robots_disallowed": 6
+  },
+  "scope": "Explicit official public search-index metadata only; not a catalog crawl",
+  "source_method_note": "crawl is the existing CSV enum for page-derived metadata; actual discovery and absence of live source fetch are recorded in evidence",
+  "pdf_bodies_downloaded": 0,
+  "pdf_model_match_rate": null,
+  "completed_at": "2026-11-23T22:30:22+09:00"
+}

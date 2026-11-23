@@ -1,0 +1,74 @@
+[
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-SC15",
+    "title": "取扱説明書",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/273514.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/273514.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 273514.pdf PCF-SC15"
+  },
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-SDS15T",
+    "title": "取扱説明書",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/287573.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/287573.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 287573.pdf PCF-SDS15T"
+  },
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-HMK151",
+    "title": "取扱説明書",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/272305.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/272305.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 272305.pdf PCF-HMK151"
+  },
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-HMK151",
+    "title": "取扱説明書",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/272306.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/272306.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 272306.pdf PCF-HMK151"
+  },
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-SDS15T-EC",
+    "title": "取扱説明書（WEB）",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/202341.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/202341.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 202341.pdf PCF-SDS15T-EC"
+  },
+  {
+    "maker": "アイリスオーヤマ",
+    "domain": "家電",
+    "product_category": "サーキュレーター",
+    "model_raw": "PCF-SDS15T-EC",
+    "title": "取扱説明書",
+    "url": "https://www.irisohyama.co.jp/products/manual/pdf/202343.pdf",
+    "source_url": "https://www.irisohyama.co.jp/products/manual/pdf/202343.pdf",
+    "source_field": "Official PDF public search-index title/cover model metadata; no body fetch by collector",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "site:irisohyama.co.jp/products/manual/pdf/ 202343.pdf PCF-SDS15T-EC"
+  }
+]
