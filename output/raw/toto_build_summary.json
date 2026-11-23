@@ -1,0 +1,18 @@
+{
+  "scope": "four public product zones, series-search first pages, up to 500 model pages; not full catalog",
+  "searches": 79,
+  "discovered_models": 242,
+  "selected_model_pages": 242,
+  "models": 242,
+  "model_unconfirmed_rows": 0,
+  "rows": 963,
+  "unique_urls": 348,
+  "gaps": 0,
+  "sample_rows": 50,
+  "sample_http": {
+    "200": 50
+  },
+  "max_searches": 180,
+  "max_models": 500,
+  "completed_at": "2026-11-23T21:54:29+09:00"
+}
