@@ -1,0 +1,38 @@
+[
+  {
+    "maker": "Samsung",
+    "domain": "通信",
+    "product_category": "スマートフォン",
+    "model_raw": "SM-S931Q",
+    "title": "マニュアル (Android 15)",
+    "url": "https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_JP&OriginYN=N&ModelType=N&ModelName=SM-S931Q&CttFileID=10069882&CDCttType=UM&VPath=UM%2F202502%2F20250212084124730%2FSM-S931Q_S938Q_UG_15_Jpn_Rev.1.0_250206.pdf",
+    "source_url": "https://www.samsung.com/jp/support/model/SM-S931QZRFSJP/",
+    "source_field": "manuals[].downloadUrl + ModelName + description; Japanese language",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "Samsung user manual PDF org.downloadcenter.samsung.com SM- Japanese"
+  },
+  {
+    "maker": "Samsung",
+    "domain": "通信",
+    "product_category": "スマートフォン",
+    "model_raw": "SM-S931Q",
+    "title": "マニュアル (Android 16)",
+    "url": "https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_JP&OriginYN=N&ModelType=N&ModelName=SM-S931Q&CttFileID=11001460&CDCttType=UM&VPath=UM%2F202510%2F20251020102606942%2FSM-S93XQ_S92XQ_UG_16_Jpn_Rev.1.0_251020.pdf",
+    "source_url": "https://www.samsung.com/jp/support/model/SM-S931QZRFSJP/",
+    "source_field": "manuals[].downloadUrl + ModelName + description; Japanese language",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "Samsung user manual PDF org.downloadcenter.samsung.com SM- Japanese"
+  },
+  {
+    "maker": "Samsung",
+    "domain": "通信",
+    "product_category": "スマートフォン",
+    "model_raw": "SM-S931Q",
+    "title": "マニュアル (Android 17)",
+    "url": "https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_JP&OriginYN=N&ModelType=N&ModelName=SM-S931Q&CttFileID=11813633&CDCttType=UM&VPath=UM%2F202610%2F20261021160919218%2FGalaxy_S26_S25_S24_S23_Series_UG_17_Jpn_Rev.1.0_261002.pdf",
+    "source_url": "https://www.samsung.com/jp/support/model/SM-S931QZRFSJP/",
+    "source_field": "manuals[].downloadUrl + ModelName + description; Japanese language",
+    "discovered_at": "2026-11-23",
+    "discovery_query": "Samsung user manual PDF org.downloadcenter.samsung.com SM- Japanese"
+  }
+]
