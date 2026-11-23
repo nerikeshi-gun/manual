@@ -1,0 +1,7 @@
+maker,domain,product_category,model_raw,model_normalized,title,url,url_type,source_method,first_seen,http_status,checked_at,model_unconfirmed,discontinued
+ノーリツ,住設,給湯リモコン,RC-K101シリーズ,RC-K101シリーズ,取扱説明書（RC-K101シリーズ）,https://www.n-techdocs.com/products/117519/documents/131572/download,pdf,crawl,,,,0,
+ノーリツ,住設,給湯リモコン,RC-K＊＊シリーズ,RC-K**シリーズ,取扱説明書（RC-K＊＊シリーズ）,https://www.n-techdocs.com/products/105785/documents/126118/download,pdf,crawl,,,,0,
+ノーリツ,住設,給湯リモコン,RC-G＊＊シリーズ,RC-G**シリーズ,取扱説明書（RC-G＊＊シリーズ）,https://www.n-techdocs.com/products/52227/documents/102908/download,pdf,crawl,,,,0,
+ノーリツ,住設,給湯リモコン,RC-J＊＊シリーズ,RC-J**シリーズ,取扱説明書（RC-J＊＊シリーズ）,https://www.n-techdocs.com/products/52209/documents/89211/download,pdf,crawl,,,,0,
+ノーリツ,住設,給湯リモコン,RC-9001シリーズ,RC-9001シリーズ,取扱説明書（RC-9001シリーズ）,https://www.n-techdocs.com/products/21793/documents/38716/download,pdf,crawl,,,,0,
+ノーリツ,住設,給湯リモコン,RC-B001シリーズ,RC-B001シリーズ,取扱説明書（RC-B001シリーズ）,https://www.n-techdocs.com/products/21888/documents/90631/download,pdf,crawl,,,,0,

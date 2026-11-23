@@ -1,12 +1,18 @@
-# ノーリツ（住設）
+# ノーリツ
 
-- 状態: **収集不可（robots.txt）**
-- 件数: 0
-- 取説の入口: www.noritz.co.jp/aftersupport/data/ の「取扱説明書検索」。検索は別サイト
-  www.n-techdocs.com（製品データサービス, /search?...&manual=1）を開く方式。
-- www.n-techdocs.com の robots.txt は `User-Agent: * / Disallow: /`（全面禁止）。
-  取説の一覧・PDFはすべてこのサイト上にあるため収集しない。
-- 手順上の誤り（2026-11-14）: 調査中に robots.txt の確認と同じコマンドで
-  n-techdocs.com の検索ページ（キーワード空, manual=1）を1回 GET してしまった。
-  取得内容（全65,749件・1,315ページという件数表示）はデータには使っていない。以後の調査は robots を確認するクライアント経由に統一した。
-- 今後: 許可が得られれば再検討（このサイトは他社ブランド: ハーマン、リンナイ、パロマ等も含む）。
+2026-11-23、公開FAQに明示された給湯リモコン6シリーズの取説URLを初回収録。全製品の一覧収集は未完了。
+
+- 起点は公式FAQ「取扱説明書を見たい」。URLは raw/noritz_evidence.jsonl に保持。
+- FAQの「リモコン型式 RC-K101シリーズ」「RC-K＊＊シリーズ」「RC-G＊＊シリーズ」「RC-J＊＊シリーズ」「RC-9001シリーズ」「RC-B001シリーズ」の6リンクを取得した。
+- 住設のシリーズ単位を認める当初指示に従い、原表記のシリーズ名を記録。個別の派生型番を生成していない。
+- リンク先は www.n-techdocs.com の /products/<ID>/documents/<ID>/download 。robots.txtの Disallow: / を確認したため、リンク先へのGET・HEADは実行していない。
+- http_status・checked_at は空欄。FAQからURLを取得したことと、PDFの生存・本文・型番照合を確認したことを混同しない。PDF本体は保存していない。
+- 以前の「収集不可」は、リンク先を取得できないことをメーカー全体のURL収集不能として扱っていた。許可された公式FAQ上に公開されたリンクは収集できるため、記録を訂正した。
+
+## 残り
+
+- 給湯器本体・暖房・調理機器等の型番別一覧は未収集。
+- 6件のリンク先の生存・PDF本文照合は未検証。
+- 禁止された検索サイトや会員制サイトにはアクセスせず、他の公式公開ページから取得できる範囲を引き続き調べる。
+
+証跡: raw/noritz_evidence.jsonl、noritz_manuals.csv、noritz_build_summary.json、noritz_append_validation.json。
