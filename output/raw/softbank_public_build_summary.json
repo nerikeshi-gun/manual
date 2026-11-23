@@ -1,0 +1,16 @@
+{
+  "scope": "four explicit official model-manual pages only, not full catalog",
+  "pages": 4,
+  "models": 3,
+  "rows": 46,
+  "unique_urls": 46,
+  "sample_rows": 46,
+  "sample_http": {
+    "200": 46
+  },
+  "search_api_used": false,
+  "completed_at": "2026-11-23T22:09:18+09:00",
+  "model_pages_without_collected_links": [
+    "https://www.softbank.jp/mobile/support/manual/smartphone/anshin-family-sumaho/pdf/"
+  ]
+}
