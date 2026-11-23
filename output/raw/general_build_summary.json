@@ -1,0 +1,13 @@
+{
+  "scope": "2025 CH/EE series public HTML manuals only; other years and series remain",
+  "rows": 18,
+  "models": 18,
+  "unique_urls": 2,
+  "http": {
+    "200": 18
+  },
+  "source_models": "explicit cover-type list, indoor and outdoor units",
+  "completed_at": "2026-11-23T21:55:32+09:00",
+  "search_api_used": false,
+  "pdf_bodies_downloaded": 0
+}
