@@ -1,0 +1,18 @@
+{
+  "catalog_products": 149,
+  "catalog_pages": 13,
+  "catalog_exhausted": true,
+  "scope": "default Japanese product catalog; discontinued-only catalog not yet enumerated",
+  "rows": 118,
+  "models": 116,
+  "unique_urls": 74,
+  "products_without_collected_manual": 74,
+  "sample_rows": 50,
+  "head_checked_unique_urls": 41,
+  "sample_http": {
+    "200": 50
+  },
+  "completed_at": "2026-11-23T21:36:11+09:00",
+  "max_catalog_pages": 200,
+  "max_products": 2400
+}
