@@ -1,0 +1,14 @@
+{
+  "catalog_models": 8,
+  "models_with_manuals": 8,
+  "rows": 10,
+  "unique_urls": 4,
+  "http": {
+    "200": 10
+  },
+  "gaps": [],
+  "anonymous_public_session": true,
+  "pdf_bodies_downloaded": 0,
+  "completed_at": "2026-11-23T22:24:03+09:00",
+  "header_verification": "HTTP 200 + attachment content type; PDF body not inspected"
+}
