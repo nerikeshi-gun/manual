@@ -1,0 +1,13 @@
+{
+  "original_rows": 98940,
+  "new_rows": 2191,
+  "total_rows": 101131,
+  "original_bytes_sha256": "92541206258a2889b4868129d4f8faf83c94748b764cce462c64ce6961533c69",
+  "original_bytes_preserved": true,
+  "catalog_subcategories_checked": 26,
+  "all_catalog_counts_match": true,
+  "random_sample_rows": 50,
+  "sample_all_http_200": true,
+  "pdf_body_model_match": "not_verified",
+  "subaru_rows_preserved": 101
+}

@@ -1,0 +1,16 @@
+{
+  "listing_pages": 52,
+  "models": 953,
+  "failures": [],
+  "remaining_queue": 0,
+  "stopped_by_limit": false,
+  "scope": {
+    "CA": "カーオーディオ",
+    "CN": "カーナビ＆AV",
+    "CE": "ドライブレコーダー＆カー用品システムアップ"
+  },
+  "max_listings": 300,
+  "max_models": 2500,
+  "max_seconds": 3600,
+  "completed_at": "2026-11-23T18:20:28+09:00"
+}

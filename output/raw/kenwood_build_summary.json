@@ -1,0 +1,28 @@
+{
+  "rows": 2191,
+  "models": 953,
+  "unique_urls": 1081,
+  "sample_rows": 50,
+  "head_checked_unique_urls": 51,
+  "user_supplied_pdf": "https://manuals.jvckenwood.com/download/files/B5A-2591-10.pdf",
+  "http": {
+    "": 2020,
+    "200": 171
+  },
+  "categories": {
+    "カーオーディオ": 444,
+    "カーナビ＆AV": 1517,
+    "ドライブレコーダー＆カー用品システムアップ": 230
+  },
+  "anomalies": 0,
+  "catalog_models": 953,
+  "completed_at": "2026-11-23T18:23:32+09:00",
+  "supplemented_models": [
+    "DPX-055MD/S",
+    "E212/S"
+  ],
+  "followup_completed_at": "2026-11-23T18:24:18+09:00",
+  "retried_urls": [
+    "https://manuals.jvckenwood.com/download/files/B5A-3301-00.pdf"
+  ]
+}

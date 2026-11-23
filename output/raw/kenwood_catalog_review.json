@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://manuals.jvckenwood.com/category.php?BR=K&CA1=CA&CA2=DINCC&ORD=RYD",
+    "status": 200,
+    "declared_count": 68,
+    "included": 29,
+    "excluded_entries": [],
+    "resolution": "model name contains slash; parser corrected without altering original model or URL",
+    "recovered_models": [
+      {
+        "model_raw": "DPX-055MD/S",
+        "url": "https://manuals.jvckenwood.com/download/DPX-055MD/S_JA_JAJP_4C7C",
+        "category": "カーオーディオ",
+        "listing_url": "https://manuals.jvckenwood.com/category.php?BR=K&CA1=CA&CA2=DINCC&ORD=RYD",
+        "catalog_labels": [
+          "",
+          "2DIN コンポ",
+          "KENWOOD"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://manuals.jvckenwood.com/category.php?BR=K&CA1=CA&CA2=DINC&PAGE=2&ORD=RYD",
+    "status": 200,
+    "declared_count": 167,
+    "included": 29,
+    "excluded_entries": [],
+    "resolution": "model name contains slash; parser corrected without altering original model or URL",
+    "recovered_models": [
+      {
+        "model_raw": "E212/S",
+        "url": "https://manuals.jvckenwood.com/download/E212/S_JA_JAJP_49D9",
+        "category": "カーオーディオ",
+        "listing_url": "https://manuals.jvckenwood.com/category.php?BR=K&CA1=CA&CA2=DINC&PAGE=2&ORD=RYD",
+        "catalog_labels": [
+          "",
+          "1DIN コンポ",
+          "KENWOOD"
+        ]
+      }
+    ]
+  }
+]
