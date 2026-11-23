@@ -1,0 +1,12 @@
+{
+  "rows": 24,
+  "models": 13,
+  "unique_urls": 19,
+  "http": {
+    "200": 24
+  },
+  "stats": {},
+  "model_unconfirmed": 1,
+  "pdf_bodies_downloaded": 0,
+  "completed_at": "2026-11-23T22:27:09+09:00"
+}
